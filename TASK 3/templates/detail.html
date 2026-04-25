@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="phone">
+    <div class="header small">
+    <h2>Sam’s Fine Spoon</h2>
+</div>
+
+<img src="{{item.image}}" class="detail-img">
+
+<h2>{{item.name}}</h2>
+<h3>₹{{item.price}}</h3>
+
+<a href="/add/{{item.id}}">
+    <button class="cart-btn">Add to Cart</button>
+</a>
+
+</div>
+
+</body>
+</html>

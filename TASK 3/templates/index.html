@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sam’s Fine Spoon</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="phone">
+    <div class="header">
+    <h1>🍽 Sam’s Fine Spoon</h1>
+    <p class="tagline">Delicious food, delivered fast</p>
+</div>
+
+<h2>Menu</h2>
+
+<div class="grid">
+{% for item in menu %}
+<div class="card">
+    <img src="{{item.image}}">
+    <h4>{{item.name}}</h4>
+    <h3>₹{{item.price}}</h3>
+
+    <a href="/item/{{item.id}}">
+        <button>View</button>
+    </a>
+</div>
+{% endfor %}
+</div>
+
+<a href="/cart">
+    <button class="cart-btn">Go to Cart</button>
+</a>
+
+</div>
+
+</body>
+</html>
