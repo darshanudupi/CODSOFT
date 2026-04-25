@@ -1,0 +1,136 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f6f8fc;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: white;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+/* HERO */
+.hero {
+  height: 350px;
+  background: url('https://images.unsplash.com/photo-1521334884684-d80222895322') center/cover;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  color: white;
+}
+
+.hero-text {
+  background: rgba(0,0,0,0.4);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  border: none;
+  background: #ff4d6d;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* CATEGORIES */
+.categories {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  flex: 1;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* PRODUCTS */
+.products {
+  padding: 20px;
+}
+
+.product-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  width: 220px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background: #ff4d6d;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* CART */
+.cart-box {
+  position: fixed;
+  right: 20px;
+  top: 100px;
+  width: 250px;
+  max-height: 300px;
+  overflow-y: auto;
+
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+
+  transition: all 0.3s ease;
+}
+
+/* Scrollbar styling */
+.cart-box::-webkit-scrollbar {
+  width: 5px;
+}
+.cart-box::-webkit-scrollbar-thumb {
+  background: #ff4d6d;
+  border-radius: 10px;
+}
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  color: #ff4d6d;
+  letter-spacing: 1px;
+}

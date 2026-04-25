@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>B-Shop Premium</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+<h2 class="logo">SAM Styles</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </nav>
+  <div class="icons">🔍 🛒</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Admire Stylish Dresses</h1>
+    <p>Discover premium fashion collections</p>
+    <button>Shop Now</button>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories">
+  <div class="card">Bestsellers</div>
+  <div class="card">Dresses</div>
+  <div class="card">Denim Jackets</div>
+  <div class="card">Accessories</div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products">
+  <h2>You may like</h2>
+
+  <div class="product-grid">
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38">
+      <h4>Black Stylish Dress</h4>
+      <p>$120</p>
+      <button onclick="addToCart('Black Dress')">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c">
+      <h4>Red Elegant Dress</h4>
+      <p>$160</p>
+      <button onclick="addToCart('Red Dress')">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+      <h4>Party Wear Dress</h4>
+      <p>$200</p>
+      <button onclick="addToCart('Party Dress')">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b">
+      <h4>Denim Jacket</h4>
+      <p>$90</p>
+      <button onclick="addToCart('Denim Jacket')">Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- CART -->
+<div id="cartBox" class="cart-box">
+  <h3>Cart</h3>
+  <ul id="cartItems"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
